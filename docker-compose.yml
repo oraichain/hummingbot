@@ -33,16 +33,16 @@ services:
   #   ports:
   #     - "8501:8501"
 
-  gateway:
-    container_name: gateway
-    image: vuonghuuhung/humming-bot-gateway
-    ports:
-      - "15888:15888"
-      - "8080:8080"
-    volumes:
-      - "./gateway_files/conf:/home/gateway/conf"
-      - "./gateway_files/logs:/home/gateway/logs"
-      - "./gateway_files/db:/home/gateway/db"
-      - "./certs:/home/gateway/certs"
-    environment:
-      - GATEWAY_PASSPHRASE=vuonghuuhung
+  # gateway:
+  #   container_name: gateway
+  #   image: vuonghuuhung/humming-bot-gateway:v2
+  #   ports:
+  #     - "15888:15888"
+  #     - "8080:8080"
+  #   volumes:
+  #     - "./gateway_files/conf:/home/gateway/conf"
+  #     - "./gateway_files/logs:/home/gateway/logs"
+  #     - "./gateway_files/db:/home/gateway/db"
+  #     - "./certs:/home/gateway/certs"
+  #   environment:
+  #     - GATEWAY_PASSPHRASE=a
